@@ -54,7 +54,8 @@
 				nameNav = $(this).attr('id');
 				thisSection = $(objNav[nameNav]);
 				scroll = thisSection.offset().top
-				$('body, html').animate({'scrollTop' : scroll}, 2000, 'swing')
+				$('body, html')
+				.animate({'scrollTop' : scroll }, 500, 'swing')
 			})
 		}
 	}
