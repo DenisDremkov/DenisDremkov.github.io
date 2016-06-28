@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/hamburgers.min.css">
+	<link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+	<header>
+		<div id = "preloader">
+			<img src="img/preloader.gif" alt="preloader">
+		</div>
+		<button class="hamburger hamburger--arrow" type="button">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>  		
+		<nav>
+			<ul class="clearfloat">
+				<li id="nav_about" class="items_nav" title="биография">
+					<a href="#">
+						<span>биография</span>
+						<i class="fa fa-user" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li id="nav_skills" class="items_nav" title="навыки в web">
+					<a href="#">
+						<span>навыки</span>
+						<i class="fa fa-html5" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li id="nav_works" class="items_nav" title="выполненные проекты">
+					<a href="#">
+						<span>проекты</span>
+						<i class="fa fa-cogs" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li id="nav_job" class="items_nav" title="пожелания к будущей работе">
+					<a href="#">
+						<span>работа</span>
+						<i class="fa fa-briefcase" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li id="nav_contacts" class="items_nav" title="контактная информация">
+					<a href="#">
+						<span>контакты</span>
+						<i class="fa fa-phone-square" aria-hidden="true"></i>
+					</a>
+					
+				</li>
+			</ul>
+		</nav>
+		<i class="fa fa-long-arrow-down navArrowDown" aria-hidden="true"></i>
+		<div id="hello_msg_wrap">
+			<span id = "hello_msg1" class="hello_msg">приветствую Вас!</span>
+			<span id = "hello_msg2" class="hello_msg">зовут меня Денис</span>
+			<span id = "hello_msg3" class="hello_msg">и я начинающий<br>web - разработчик</span>
+		</div>
+	</header>
+	<section id="section_about">
+		<h1>portfolio</h1>
+		
+		<article>
+			<h2 class="headers_section">Биография</h2>
+			<p id="about1">Мне 33 года. Постоянно проживаю в г. Запорожье, Украина.</p>
+			<p id="about2">В 2004 году	закончил Запорожскую государственную инженерную академию. Специальность - экономическая кибернетика. Тема дипломной работы : «Моделирование кредитного портфеля банка» (язык программирования «Visual Basic 6.0», диплом с отличием).</p>
+			<p id="about3">2005 г. - 2013 г. работал в банковской сфере.</p>
+			<p id="about4">2013 г. - 2015 г. занимался частным бизнесом.</p>
+			<p id="about5">WEB - ом заинтересовался не так давно - с сентября 2015 года. Теперь все свободное время уделяю изучению интернет технологий.</p>
+			<p id="about6">Моя цель - стать профессионалом в разработке WEB-приложений.</p>
+		</article>
+	</section>
+	<section id="section_skills">
+		<h2 class="headers_section">навыки</h2>
+		<div id="monitor_wrap">
+			<div id="skill_items_wrap">
+				<img id="center_web_img" src="img/logo.jpg" alt="web">
+				<div id="top_wrap" class="skill_position">
+					<img  src="img/skills/html.png" alt="html">
+					<img  src="img/skills/css.png" alt="css">
+					<img  src="img/skills/js.png" alt="js">
+				</div>
+				
+				<div id="left_wrap" class="skill_position">
+					<img  src="img/skills/angular.png" alt="angular">
+					<img  src="img/skills/jq.png" alt="jq">
+				</div>
+				<div id="right_wrap" class="skill_position">
+					<img  src="img/skills/node.png" alt="node">
+					<img  src="img/skills/mongo.png" alt="mongo">
+				</div>
+				<div id="bottom_wrap" class="skill_position clearfloat">
+					<img  src="img/skills/sass.png" alt="sass">
+					<img  src="img/skills/bootstrap.png" alt="bootstrap">
+					<img  src="img/skills/svg.png" alt="svg">
+					<img  src="img/skills/ps.png" alt="ps">
+					<img  src="img/skills/sublime.png" alt="sublime">
+				</div>
+			</div>
+			<img id="skill_monitor" src="img/laptop.png" alt="monitor">
+		</div>
+	</section>
+	<section id="section_works">
+		<div id="paralax_view">
+			<div class="" id="paralax_img">
+				<div id="overlay_paral"></div>
+			</div>
+		</div>
+		<article id="works">
+			<h2 class="headers_section">проекты</h2>
+			<div class="row">
+				<div class="col-xs-6">
+					<h3 id="head_mean" class="header_items_works">Mean-stack</h3>			
+					<div id="mean" class="work_item_wrap">
+						<div class="img_wrap">	
+							<a href="https://meanstackdremkov.herokuapp.com/" class="link_project" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+							<div class="overlay"></div>
+							<img src="img/works/mean/1.png" data-name = 'mean' alt="mean">
+						</div>
+						
+						
+						<div class="description">
+							<p>Интернет-магазин (Angular, NodeJs, Express, MongoDb - MongoLab). Подробное описание самого проекта доступно непосредственно в проекте в навигации</p>
+							<ul>
+								<li><a href="https://github.com/DenisDremkov/app-front-back-code" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Back-end code</a></li>
+								<li><a href="https://github.com/DenisDremkov/app-front-back-code/tree/master/public" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Front-end code</a></li>
+								<li><a href="https://github.com/DenisDremkov/app-front-back-code/blob/master/public/sass/screen.scss" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Sass code</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<h3 id="head_layout" class="header_items_works">Layout</h3>
+					<div id="layout" class="work_item_wrap">
+						<div class="img_wrap">
+							<a href="#" class="link_project" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+							<div class="overlay"></div>
+							<img src="img/works/layout/1.png" alt="layout">
+						</div>		
+						
+						
+						<div class="description">
+							<p>Верстка landing page, с небольшим количеством анимации (делал 4 месяца назад). Последние 4 мес. изучал  mean-stack компоненты. Всего, в качестве обучения, сверстал порядка 10 сайтов разной сложности.  О моем умении верстать судите по портфолио.</p>
+							<ul>
+								<li><a href="https://github.com/DenisDremkov/brandaloka" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Front-end code</a></li>
+								<li><a href="https://github.com/DenisDremkov/brandaloka/blob/master/sass/screen.scss" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Sass code</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<section id="section_job">
+		<article id="job_item_wrap">
+			<h2 class="headers_section">работа</h2>
+			<p>Какую работу я ищу:</p>
+			<div  class="job_item">
+				<i class="fa fa-map-marker" aria-hidden="true"></i>
+				<p>рассматриваю регион - Запорожье (возможно Днепр). </p>			
+			</div>
+			<div  class="job_item">
+				<i class="fa fa-wrench" aria-hidden="true"></i>
+				<p>мне предпочительно работать c mean-stack (Angular, NodeJs). </p>
+			</div>
+			<div  class="job_item">
+				<i class="fa fa-clock-o" aria-hidden="true"></i>
+				<p>к испытательному сроку готов. </p>
+			</div>
+			<div  class="job_item">
+				<i class="fa fa-usd" aria-hidden="true"></i>
+				<p>з/п по итогам собеседования. </p>
+			</div>
+		</article>
+	</section>	
+	<footer>		
+		<div id="footer_paralax">
+			<h2 class="headers_section">контакты</h2>
+			<table>
+				<tr>
+					<td>
+					<i class="fa fa-phone-square" aria-hidden="true"></i>
+					</td>	
+					<td>
+						<span>(050) 754-11-90, </span>
+						<span>(098) 383-44-84</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					</td>	
+					<td>
+						<span>denisdremkovweb@gmail.com</span>	
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<i class="fa fa-skype" aria-hidden="true"></i>
+					</td>	
+					<td>
+						<span>denisca20081982</span>
+					</td>
+				</tr>
+			</table>	
+				<ul class="social_wrap clearfloat">
+					<li><a href="https://github.com/DenisDremkov" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					<li><a href="https://ru-ru.facebook.com/ddeenniisso" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+					<li><a href="https://vk.com/ostashevskii" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.youtube.com/channel/UCL4xDqgMQbWxBU3azQOfPHQ" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+				</ul>
+		</div>
+	</footer>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<!-- hide preloader for disabled user javascript -->
+	<link rel="stylesheet" href="css/hidePreloader.css">
+
+</body>
+</html>
