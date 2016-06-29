@@ -275,16 +275,16 @@
 			var topScroll = $(window).scrollTop();
 			var middleLine = $('#section_skills').offset().top + $('#section_skills').outerHeight()
 			if (topScroll < middleLine) {
-				$('body, html').animate({'scrollTop' : $(document).outerHeight()}, 2000)
+				$('body, html').animate({'scrollTop' : $(document).outerHeight()}, 1000)
 				setTimeout(function() {
 					arrowNavigationPosition()	
-				},2000)
+				},1000)
 			}
 			else  {
-				$('body, html').animate({'scrollTop' : 0},2000)
+				$('body, html').animate({'scrollTop' : 0},1000)
 				setTimeout(function() {
 					arrowNavigationPosition()	
-				},2000)
+				},1000)
 			}
 		})
 	}
